@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: my-cloud-cunsumer-hystrix-dashboard
+server:
+  port: 8043
+eureka:
+  instance:
+    hostname: cunsumer3
+  client:
+    service-url:
+      defaultZone: http://eureka1:8011/eureka/ #设置与Eureka Server交互的地址，查询服务和注册服务都需要依赖这个地址。默认是http://localhost:8761/eureka ；多个地址可使用 , 分隔
+
+feign:
+  hystrix:
+    enabled: true

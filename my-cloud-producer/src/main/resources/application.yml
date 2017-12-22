@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: my-cloud-producer
+server:
+  port: 9031
+eureka:
+  instance:
+    hostname: producer
+    #prefer-ip-address: true
+    #instance-id: ${spring.application.name}:${spring.cloud.client.ipAddress}:${spring.application.instance_id:${server.port}}
+  client:
+    service-url:
+      defaultZone: http://eureka1:8012/eureka/ #设置与Eureka Server交互的地址，查询服务和注册服务都需要依赖这个地址。默认是http://localhost:8761/eureka ；多个地址可使用 , 分隔
