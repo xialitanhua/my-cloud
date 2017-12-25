@@ -21,7 +21,8 @@
         <module>my-cloud-consumer-hystrix-dashboard</module>
         <module>my-cloud-consumer-hystrix-dashboard2</module>
         <module>hystrix-dashboard-turbine</module>
-        <module>my-cloud-config-manager</module>
+        <module>my-cloud-config-service</module>
+        <module>my-cloud-config-client</module>
     </modules>
 
     <parent>
