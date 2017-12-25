@@ -1,0 +1,8 @@
+
+spring:
+  cloud:
+    config:
+      uri: http://localhost:9001
+      profile: dev
+      label: dev
+      name: foobar

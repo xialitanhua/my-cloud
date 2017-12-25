@@ -1,0 +1,7 @@
+server:
+  port: 9002
+
+#profile:  default
+spring:
+  application:
+    name: my-cloud-config-client
